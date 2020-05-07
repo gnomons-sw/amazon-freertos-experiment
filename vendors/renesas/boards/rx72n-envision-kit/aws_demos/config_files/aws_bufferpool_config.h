@@ -1,5 +1,5 @@
 /*
- * FreeRTOS Utils V1.1.2
+ * FreeRTOS V1.4.8
  * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -23,29 +23,22 @@
  * http://www.FreeRTOS.org
  */
 
-#include <stdbool.h>
+/**
+ * @file aws_bufferpool_config.h
+ * @brief Buffer Pool config options.
+ */
 
-#include "FreeRTOS.h"
-#include "iot_system_init.h"
-//#include "iot_secure_sockets.h"		//TODO: remove comment after porting SecureSocket
-//#include "iot_crypto.h"	//TODO: remove comment after porting Crypto
-
-
-/*-----------------------------------------------------------*/
+#ifndef _AWS_BUFFER_POOL_CONFIG_H_
+#define _AWS_BUFFER_POOL_CONFIG_H_
 
 /**
- * @brief Initializes FreeRTOS libraries.
+ * @brief The number of buffers in the static buffer pool.
  */
-BaseType_t SYSTEM_Init( void )
-{
-    BaseType_t xResult = pdPASS;
+#define bufferpoolconfigNUM_BUFFERS    ( 8 )
 
-    //CRYPTO_Init();	//TODO: un-comment when the lib is included
+/**
+ * @brief The size of each buffer in the static buffer pool.
+ */
+#define bufferpoolconfigBUFFER_SIZE    ( 512 )
 
-    if( xResult == pdPASS )
-    {
-        //xResult = SOCKETS_Init();	//TODO: un-comment when the lib is included
-    }
-
-    return xResult;
-}
+#endif /* _AWS_BUFFER_POOL_CONFIG_H_ */

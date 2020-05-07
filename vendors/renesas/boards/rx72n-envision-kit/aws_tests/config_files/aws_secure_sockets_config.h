@@ -1,6 +1,6 @@
 /*
- * FreeRTOS Utils V1.1.2
- * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+ * Amazon FreeRTOS V1.1.4
+ * Copyright (C) 2018 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -23,29 +23,34 @@
  * http://www.FreeRTOS.org
  */
 
-#include <stdbool.h>
+/**
+ * @file aws_secure_sockets_config.h
+ * @brief Secure sockets configuration options.
+ */
 
-#include "FreeRTOS.h"
-#include "iot_system_init.h"
-//#include "iot_secure_sockets.h"		//TODO: remove comment after porting SecureSocket
-//#include "iot_crypto.h"	//TODO: remove comment after porting Crypto
-
-
-/*-----------------------------------------------------------*/
+#ifndef _AWS_SECURE_SOCKETS_CONFIG_H_
+#define _AWS_SECURE_SOCKETS_CONFIG_H_
 
 /**
- * @brief Initializes FreeRTOS libraries.
+ * @brief Byte order of the target MCU.
+ *
+ * Valid values are pdLITTLE_ENDIAN and pdBIG_ENDIAN.
  */
-BaseType_t SYSTEM_Init( void )
-{
-    BaseType_t xResult = pdPASS;
+#define socketsconfigBYTE_ORDER              pdLITTLE_ENDIAN
 
-    //CRYPTO_Init();	//TODO: un-comment when the lib is included
+/**
+ * @brief Default socket send timeout.
+ */
+#define socketsconfigDEFAULT_SEND_TIMEOUT    ( 10000 )
 
-    if( xResult == pdPASS )
-    {
-        //xResult = SOCKETS_Init();	//TODO: un-comment when the lib is included
-    }
+/**
+ * @brief Default socket receive timeout.
+ */
+#define socketsconfigDEFAULT_RECV_TIMEOUT    ( 10000 )
 
-    return xResult;
-}
+/**
+ * @brief Enable metrics of secure socket.
+ */
+#define AWS_IOT_SECURE_SOCKETS_METRICS_ENABLED    ( 1 )
+
+#endif /* _AWS_SECURE_SOCKETS_CONFIG_H_ */

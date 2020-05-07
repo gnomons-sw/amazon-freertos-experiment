@@ -1,6 +1,6 @@
 /*
- * FreeRTOS Utils V1.1.2
- * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+ * Amazon FreeRTOS V1.1.4
+ * Copyright (C) 2018 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -23,29 +23,32 @@
  * http://www.FreeRTOS.org
  */
 
-#include <stdbool.h>
+/**
+ * @file aws_shadow_config.h
+ * @brief specify shadow config
+ */
 
-#include "FreeRTOS.h"
-#include "iot_system_init.h"
-//#include "iot_secure_sockets.h"		//TODO: remove comment after porting SecureSocket
-//#include "iot_crypto.h"	//TODO: remove comment after porting Crypto
-
-
-/*-----------------------------------------------------------*/
+#ifndef _AWS_SHADOW_CONFIG_H_
+#define _AWS_SHADOW_CONFIG_H_
 
 /**
- * @brief Initializes FreeRTOS libraries.
+ * @brief Number of jsmn tokens to use in parsing.  Each jsmn token contains 4 ints.
+ * Ensure that the number of tokens does not overflow the calling task's stack,
+ * but is also sufficient to parse the largest expected JSON documents. */
+#define shadowConfigJSON_JSMN_TOKENS    ( 64 )
+
+
+/**
+ * @brief
+ * The JSON key to search for when looking for client tokens.
  */
-BaseType_t SYSTEM_Init( void )
-{
-    BaseType_t xResult = pdPASS;
+#define shadowConfigJSON_CLIENT_TOKEN    "clientToken"
 
-    //CRYPTO_Init();	//TODO: un-comment when the lib is included
 
-    if( xResult == pdPASS )
-    {
-        //xResult = SOCKETS_Init();	//TODO: un-comment when the lib is included
-    }
+/**
+ * @brief
+ * enable/disable shadowConfigUNIQUE_CLIENT_TOKEN_CHECK check.
+ */
+#define shadowConfigUNIQUE_CLIENT_TOKEN_CHECK    0
 
-    return xResult;
-}
+#endif /* _AWS_SHADOW_CONFIG_H_ */

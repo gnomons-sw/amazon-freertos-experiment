@@ -1,5 +1,5 @@
 /*
- * FreeRTOS Utils V1.1.2
+ * FreeRTOS V1.4.8
  * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -23,29 +23,48 @@
  * http://www.FreeRTOS.org
  */
 
-#include <stdbool.h>
+/**
+ * @file aws_mqtt_config.h
+ * @brief MQTT config options.
+ */
 
-#include "FreeRTOS.h"
-#include "iot_system_init.h"
-//#include "iot_secure_sockets.h"		//TODO: remove comment after porting SecureSocket
-//#include "iot_crypto.h"	//TODO: remove comment after porting Crypto
+#ifndef _AWS_MQTT_CONFIG_H_
+#define _AWS_MQTT_CONFIG_H_
 
-
-/*-----------------------------------------------------------*/
+#include <stdint.h>
 
 /**
- * @brief Initializes FreeRTOS libraries.
+ * @brief Enable subscription management.
+ *
+ * This gives the user flexibility of registering a callback per topic.
  */
-BaseType_t SYSTEM_Init( void )
-{
-    BaseType_t xResult = pdPASS;
+#define mqttconfigENABLE_SUBSCRIPTION_MANAGEMENT            ( 1 )
 
-    //CRYPTO_Init();	//TODO: un-comment when the lib is included
+/**
+ * @brief Maximum length of the topic which can be stored in subscription
+ * manager.
+ */
+#define mqttconfigSUBSCRIPTION_MANAGER_MAX_TOPIC_LENGTH     ( 128 )
 
-    if( xResult == pdPASS )
-    {
-        //xResult = SOCKETS_Init();	//TODO: un-comment when the lib is included
-    }
+/**
+ * @brief Maximum number of subscriptions which can be stored in subscription
+ * manager.
+ */
+#define mqttconfigSUBSCRIPTION_MANAGER_MAX_SUBSCRIPTIONS    ( 8 )
 
-    return xResult;
-}
+/*
+ * Uncomment the following two lines to enable asserts.
+ */
+/* extern void vAssertCalled( const char *pcFile, uint32_t ulLine ); */
+/* #define mqttconfigASSERT( x ) if( ( x ) == 0 ) vAssertCalled( __FILE__, __LINE__ ) */
+
+
+extern void vAssertCalled( void );
+#define mqttconfigASSERT( x ) if( ( x ) == 0 ) vAssertCalled()
+
+/**
+ * @brief Set this macro to 1 for enabling debug logs.
+ */
+#define mqttconfigENABLE_DEBUG_LOGS    0
+
+#endif /* _AWS_MQTT_CONFIG_H_ */

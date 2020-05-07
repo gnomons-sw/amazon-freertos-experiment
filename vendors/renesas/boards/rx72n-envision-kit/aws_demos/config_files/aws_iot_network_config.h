@@ -1,5 +1,5 @@
 /*
- * FreeRTOS Utils V1.1.2
+* FreeRTOS
  * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -23,29 +23,35 @@
  * http://www.FreeRTOS.org
  */
 
-#include <stdbool.h>
-
-#include "FreeRTOS.h"
-#include "iot_system_init.h"
-//#include "iot_secure_sockets.h"		//TODO: remove comment after porting SecureSocket
-//#include "iot_crypto.h"	//TODO: remove comment after porting Crypto
-
-
-/*-----------------------------------------------------------*/
 
 /**
- * @brief Initializes FreeRTOS libraries.
+ * @file aws_iot_network_config.h
+ * @brief Configuration file which enables different network types.
  */
-BaseType_t SYSTEM_Init( void )
-{
-    BaseType_t xResult = pdPASS;
+#ifndef AWS_IOT_NETWORK_CONFIG_H_
+#define AWS_IOT_NETWORK_CONFIG_H_
 
-    //CRYPTO_Init();	//TODO: un-comment when the lib is included
+/**
+ * @brief Configuration flag used to specify all supported network types by the board.
+ *
+ * The configuration is fixed per board and should never be changed.
+ * More than one network interfaces can be enabled by using 'OR' operation with flags for
+ * each network types supported. Flags for all supported network types can be found
+ * in "aws_iot_network.h"
+ */
 
-    if( xResult == pdPASS )
-    {
-        //xResult = SOCKETS_Init();	//TODO: un-comment when the lib is included
-    }
+#define configSUPPORTED_NETWORKS    ( AWSIOT_NETWORK_TYPE_ETH )
 
-    return xResult;
-}
+/**
+ * @brief Configuration flag which is used to enable one or more network interfaces for a board.
+ *
+ * The configuration can be changed any time to keep one or more network enabled or disabled.
+ * More than one network interfaces can be enabled by using 'OR' operation with flags for
+ * each network types supported. Flags for all supported network types can be found
+ * in "aws_iot_network.h"
+ *
+ */
+
+#define configENABLED_NETWORKS      ( AWSIOT_NETWORK_TYPE_ETH )
+
+#endif /* CONFIG_FILES_AWS_IOT_NETWORK_CONFIG_H_ */

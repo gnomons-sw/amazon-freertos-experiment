@@ -1,6 +1,5 @@
 /*
- * FreeRTOS Utils V1.1.2
- * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+ * Copyright (C) 2018 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of
  * this software and associated documentation files (the "Software"), to deal in
@@ -18,34 +17,17 @@
  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
  * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- *
- * http://aws.amazon.com/freertos
- * http://www.FreeRTOS.org
  */
 
-#include <stdbool.h>
+/* This file contains configuration settings for the tests. */
 
-#include "FreeRTOS.h"
-#include "iot_system_init.h"
-//#include "iot_secure_sockets.h"		//TODO: remove comment after porting SecureSocket
-//#include "iot_crypto.h"	//TODO: remove comment after porting Crypto
+#ifndef IOT_CONFIG_H_
+#define IOT_CONFIG_H_
 
+/* Platform thread stack size. */
+#define IOT_THREAD_DEFAULT_STACK_SIZE    ( 5 * configMINIMAL_STACK_SIZE )
 
-/*-----------------------------------------------------------*/
+/* Include the common configuration file for FreeRTOS. */
+#include "iot_config_common.h"
 
-/**
- * @brief Initializes FreeRTOS libraries.
- */
-BaseType_t SYSTEM_Init( void )
-{
-    BaseType_t xResult = pdPASS;
-
-    //CRYPTO_Init();	//TODO: un-comment when the lib is included
-
-    if( xResult == pdPASS )
-    {
-        //xResult = SOCKETS_Init();	//TODO: un-comment when the lib is included
-    }
-
-    return xResult;
-}
+#endif /* ifndef IOT_CONFIG_H_ */
