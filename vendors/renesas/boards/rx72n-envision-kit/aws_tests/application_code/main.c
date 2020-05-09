@@ -26,7 +26,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 /* FreeRTOS includes. */
 #include "FreeRTOS.h"
 #include "task.h"
-//#include "FreeRTOS_IP.h"
+#include "FreeRTOS_IP.h"
 #include <stdio.h>
 #include <string.h>
 #include <machine.h>
@@ -38,11 +38,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //#include "aws_test_runner.h"
 
 /* Aws Library Includes includes. */
-//#include "iot_system_init.h"
-//#include "iot_logging_task.h"
-//#include "aws_clientcredential.h"
-//#include "aws_application_version.h"
-//#include "aws_dev_mode_key_provisioning.h"
+#include "iot_system_init.h"
+#include "iot_logging_task.h"
+#include "aws_clientcredential.h"
+#include "aws_application_version.h"
+#include "aws_dev_mode_key_provisioning.h"
 
 #define mainLOGGING_TASK_STACK_SIZE         ( configMINIMAL_STACK_SIZE * 6 )
 #define mainLOGGING_MESSAGE_QUEUE_LENGTH    ( 15 )
@@ -129,12 +129,12 @@ static void prvMiscInitialization( void )
 	uart_config();
 
 	/* Test serial output */
-	configPRINT_STRING("Test Message");
+	configPRINT_STRING("Test Message\n");
 
     /* Start logging task. */
-//    xLoggingTaskInitialize( mainLOGGING_TASK_STACK_SIZE,
-//                            tskIDLE_PRIORITY,
-//                            mainLOGGING_MESSAGE_QUEUE_LENGTH );
+    xLoggingTaskInitialize( mainLOGGING_TASK_STACK_SIZE,
+                            tskIDLE_PRIORITY,
+                            mainLOGGING_MESSAGE_QUEUE_LENGTH );
 }
 /*-----------------------------------------------------------*/
 
@@ -147,19 +147,20 @@ void vApplicationDaemonTaskStartupHook( void )
         /* Initialise the RTOS's TCP/IP stack.  The tasks that use the network
         are created in the vApplicationIPNetworkEventHook() hook function
         below.  The hook function is called when the network connects. */
-//        FreeRTOS_IPInit( ucIPAddress,
-//                         ucNetMask,
-//                         ucGatewayAddress,
-//                         ucDNSServerAddress,
-//                         ucMACAddress );
+        FreeRTOS_IPInit( ucIPAddress,
+                         ucNetMask,
+                         ucGatewayAddress,
+                         ucDNSServerAddress,
+                         ucMACAddress );
 
-//        /* We should wait for the network to be up before we run any tests. */
-//        while( FreeRTOS_IsNetworkUp() == pdFALSE )
-//        {
-//            vTaskDelay(300);
-//        }
-//        FreeRTOS_printf( ( "The network is up and running\n" ) );
-//
+        /* We should wait for the network to be up before we run any tests. */
+        while( FreeRTOS_IsNetworkUp() == pdFALSE )
+        {
+            vTaskDelay(300);
+        }
+        FreeRTOS_printf( ( "The network is up and running\n" ) );
+        configPRINT_STRING("\nNetwork connection is successful!\n");
+
 //        /* Provision the device with AWS certificate and private key. */
 //        vDevModeKeyProvisioning();
 //

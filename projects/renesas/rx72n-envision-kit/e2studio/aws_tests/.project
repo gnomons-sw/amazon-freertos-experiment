@@ -40,6 +40,11 @@
 			<locationURI>AFR_HOME/vendors/renesas/boards/rx72n-envision-kit/aws_tests/config_files</locationURI>
 		</link>
 		<link>
+			<name>demos</name>
+			<type>2</type>
+			<location>C:/Renesas/Workspace/rx72n/amazon-freertos-experiment/demos</location>
+		</link>
+		<link>
 			<name>freertos_kernel</name>
 			<type>2</type>
 			<location>C:/Renesas/Workspace/afr_2020_renesas/amazon-freertos/freertos_kernel</location>
@@ -50,6 +55,11 @@
 			<locationURI>AFR_HOME/libraries</locationURI>
 		</link>
 		<link>
+			<name>tests</name>
+			<type>2</type>
+			<location>C:/Renesas/Workspace/rx72n/amazon-freertos-experiment/tests</location>
+		</link>
+		<link>
 			<name>vendors</name>
 			<type>2</type>
 			<locationURI>AFR_HOME/vendors</locationURI>
@@ -57,12 +67,12 @@
 	</linkedResources>
 	<filteredResources>
 		<filter>
-			<id>1588822737288</id>
-			<name>config_files</name>
-			<type>5</type>
+			<id>1588943001601</id>
+			<name>demos</name>
+			<type>9</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-false-false-FreeRTOSConfig.h</arguments>
+				<arguments>1.0-name-matches-false-false-dev_mode_key_provisioning</arguments>
 			</matcher>
 		</filter>
 		<filter>
@@ -93,12 +103,12 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1588836455391</id>
+			<id>1588929170738</id>
 			<name>vendors/renesas</name>
 			<type>9</type>
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
-				<arguments>1.0-name-matches-false-false-amazon_freertos_common</arguments>
+				<arguments>1.0-name-matches-false-true-amazon_freertos_common|boards</arguments>
 			</matcher>
 		</filter>
 		<filter>
@@ -120,6 +130,42 @@
 			</matcher>
 		</filter>
 		<filter>
+			<id>1588931132130</id>
+			<name>libraries/3rdparty/unity</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-true-extras|src</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1588929198979</id>
+			<name>vendors/renesas/boards</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-rx72n-envision-kit</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1588931150494</id>
+			<name>libraries/3rdparty/unity/extras</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-fixture</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1588943423937</id>
+			<name>libraries/abstractions/pkcs11/test</name>
+			<type>5</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-iot_test_pkcs11.c</arguments>
+			</matcher>
+		</filter>
+		<filter>
 			<id>1588836476600</id>
 			<name>vendors/renesas/amazon_freertos_common/compiler_support</name>
 			<type>9</type>
@@ -135,6 +181,60 @@
 			<matcher>
 				<id>org.eclipse.ui.ide.multiFilter</id>
 				<arguments>1.0-name-matches-false-false-onchip_rx_ether</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1588929219970</id>
+			<name>vendors/renesas/boards/rx72n-envision-kit</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-ports</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1588931174067</id>
+			<name>libraries/3rdparty/unity/extras/fixture</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-src</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1588950624271</id>
+			<name>libraries/freertos_plus/aws/ota/test</name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-test_files</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1588907612056</id>
+			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/BufferManagement</name>
+			<type>5</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-BufferAllocation_2.c</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1588907630118</id>
+			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-Renesas</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1588907687253</id>
+			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface</name>
+			<type>9</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+				<arguments>1.0-name-matches-false-false-RX</arguments>
 			</matcher>
 		</filter>
 	</filteredResources>

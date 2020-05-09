@@ -5,7 +5,9 @@
             <property id="com.renesas.smc.service.project.buildArtefactType" values="com.renesas.smc.service.project.buildArtefactType.exe"/>
             <toolchain id="com.renesas.smc.toolchain.rxc.toolchain.rxc">
                 <option id="com.renesas.smc.toolchain.option.buildArtefactType" key="com.renesas.smc.toolchain.option.buildArtefactType.exe"/>
-                <option id="com.renesas.smc.toolchain.option.rtos" key="com.renesas.smc.toolchain.option.rtos.none"/>
+                <option id="com.renesas.smc.toolchain.option.rtos" key="com.renesas.smc.toolchain.option.rtos.freertos">
+                    <item id="com.renesas.smc.toolchain.option.rtos.freertos" value="FreeRTOS_RX_V10.0.00"/>
+                </option>
             </toolchain>
         </configuration>
         <platform id="R5F572NNHxFB"/>
@@ -291,6 +293,24 @@
         <pinItem allocation="45" comments="" direction="None" id="RXD2" isUsedBySoftware="true" locked="false" status="0"/>
         <pinItem allocation="44" comments="" direction="None" id="TXD2" isUsedBySoftware="true" locked="false" status="0"/>
         <pinItem allocation="22" comments="" direction="None" id="EXTAL" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="65" comments="" direction="None" id="ET0_TX_EN" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="67" comments="" direction="None" id="ET0_TX_ER" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="85" comments="" direction="None" id="ET0_MDC" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="60" comments="" direction="None" id="ET0_COL" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="58" comments="" direction="None" id="ET0_CRS" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="70" comments="" direction="None" id="ET0_RX_DV" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="68" comments="" direction="None" id="ET0_RX_ER" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="61" comments="" direction="None" id="ET0_ETXD3" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="62" comments="" direction="None" id="ET0_ETXD2" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="63" comments="" direction="None" id="ET0_ETXD1" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="64" comments="" direction="None" id="ET0_ETXD0" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="69" comments="" direction="None" id="ET0_RX_CLK" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="75" comments="" direction="None" id="ET0_ERXD3" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="73" comments="" direction="None" id="ET0_ERXD2" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="72" comments="" direction="None" id="ET0_ERXD1" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="71" comments="" direction="None" id="ET0_ERXD0" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="66" comments="" direction="None" id="ET0_TX_CLK" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="86" comments="" direction="None" id="ET0_MDIO" isUsedBySoftware="true" locked="false" status="0"/>
     </tool>
     <tool id="Interrupt">
         <Item id="BSC_BUSERR" priority="15"/>
@@ -833,31 +853,31 @@
         </configuration>
         <configuration inuse="true" name="r_ether_rx">
             <component description="Dependency : r_bsp version(s) 5.50&#10;The Ethernet fit module provides a method to send and receive Ethernet / IEEE802.3 frame using Ethernet controller (ETHERC), Ethernet DMA controller (EDMAC)." detailDescription="Ethernet Driver." display="r_ether_rx" id="r_ether_rx1.20" version="1.20">
-                <gridItem id="CLKOUT25M" selectedIndex="0"/>
-                <gridItem id="ET0_TX_CLK" selectedIndex="0"/>
-                <gridItem id="ET0_RX_CLK" selectedIndex="0"/>
-                <gridItem id="ET0_TX_EN" selectedIndex="0"/>
-                <gridItem id="ET0_ETXD3" selectedIndex="0"/>
-                <gridItem id="ET0_ETXD2" selectedIndex="0"/>
-                <gridItem id="ET0_ETXD1" selectedIndex="0"/>
-                <gridItem id="ET0_ETXD0" selectedIndex="0"/>
-                <gridItem id="ET0_TX_ER" selectedIndex="0"/>
-                <gridItem id="ET0_RX_DV" selectedIndex="0"/>
-                <gridItem id="ET0_ERXD3" selectedIndex="0"/>
-                <gridItem id="ET0_ERXD2" selectedIndex="0"/>
-                <gridItem id="ET0_ERXD1" selectedIndex="0"/>
-                <gridItem id="ET0_ERXD0" selectedIndex="0"/>
-                <gridItem id="ET0_RX_ER" selectedIndex="0"/>
-                <gridItem id="ET0_CRS" selectedIndex="0"/>
-                <gridItem id="ET0_COL" selectedIndex="0"/>
-                <gridItem id="ET0_MDC" selectedIndex="0"/>
-                <gridItem id="ET0_MDIO" selectedIndex="0"/>
+                <gridItem id="CLKOUT25M" selectedIndex="1"/>
+                <gridItem id="ET0_TX_CLK" selectedIndex="1"/>
+                <gridItem id="ET0_RX_CLK" selectedIndex="1"/>
+                <gridItem id="ET0_TX_EN" selectedIndex="1"/>
+                <gridItem id="ET0_ETXD3" selectedIndex="1"/>
+                <gridItem id="ET0_ETXD2" selectedIndex="1"/>
+                <gridItem id="ET0_ETXD1" selectedIndex="1"/>
+                <gridItem id="ET0_ETXD0" selectedIndex="1"/>
+                <gridItem id="ET0_TX_ER" selectedIndex="1"/>
+                <gridItem id="ET0_RX_DV" selectedIndex="1"/>
+                <gridItem id="ET0_ERXD3" selectedIndex="1"/>
+                <gridItem id="ET0_ERXD2" selectedIndex="1"/>
+                <gridItem id="ET0_ERXD1" selectedIndex="1"/>
+                <gridItem id="ET0_ERXD0" selectedIndex="1"/>
+                <gridItem id="ET0_RX_ER" selectedIndex="1"/>
+                <gridItem id="ET0_CRS" selectedIndex="1"/>
+                <gridItem id="ET0_COL" selectedIndex="1"/>
+                <gridItem id="ET0_MDC" selectedIndex="1"/>
+                <gridItem id="ET0_MDIO" selectedIndex="1"/>
                 <gridItem id="PMGI0_MDC" selectedIndex="0"/>
                 <gridItem id="PMGI0_MDIO" selectedIndex="0"/>
                 <gridItem id="ET0_LINKSTA" selectedIndex="0"/>
                 <gridItem id="ET0_EXOUT" selectedIndex="0"/>
                 <gridItem id="ET0_WOL" selectedIndex="0"/>
-                <gridItem id="ETHERC0_MII" selectedIndex="0"/>
+                <gridItem id="ETHERC0_MII" selectedIndex="1"/>
                 <gridItem id="REF50CK0" selectedIndex="0"/>
                 <gridItem id="RMII0_TXD_EN" selectedIndex="0"/>
                 <gridItem id="RMII0_TXD1" selectedIndex="0"/>
@@ -866,15 +886,15 @@
                 <gridItem id="RMII0_RXD0" selectedIndex="0"/>
                 <gridItem id="RMII0_RX_ER" selectedIndex="0"/>
                 <gridItem id="RMII0_CRS_DV" selectedIndex="0"/>
-                <gridItem id="ET0_MDC" selectedIndex="0"/>
-                <gridItem id="ET0_MDIO" selectedIndex="0"/>
+                <gridItem id="ET0_MDC" selectedIndex="1"/>
+                <gridItem id="ET0_MDIO" selectedIndex="1"/>
                 <gridItem id="PMGI0_MDC" selectedIndex="0"/>
                 <gridItem id="PMGI0_MDIO" selectedIndex="0"/>
                 <gridItem id="ET0_LINKSTA" selectedIndex="0"/>
                 <gridItem id="ET0_EXOUT" selectedIndex="0"/>
                 <gridItem id="ET0_WOL" selectedIndex="0"/>
                 <gridItem id="ETHERC0_RMII" selectedIndex="0"/>
-                <gridItem id="CLKOUT25M" selectedIndex="0"/>
+                <gridItem id="CLKOUT25M" selectedIndex="1"/>
                 <gridItem id="ET1_TX_CLK" selectedIndex="0"/>
                 <gridItem id="ET1_RX_CLK" selectedIndex="0"/>
                 <gridItem id="ET1_TX_EN" selectedIndex="0"/>
@@ -918,16 +938,16 @@
                 <gridItem id="ETHER_CFG_MODE_SEL" selectedIndex="0"/>
                 <gridItem id="ETHER_CFG_CH0_PHY_ADDRESS" selectedIndex="0"/>
                 <gridItem id="ETHER_CFG_CH1_PHY_ADDRESS" selectedIndex="1"/>
-                <gridItem id="ETHER_CFG_EMAC_RX_DESCRIPTORS" selectedIndex="1"/>
-                <gridItem id="ETHER_CFG_EMAC_TX_DESCRIPTORS" selectedIndex="1"/>
+                <gridItem id="ETHER_CFG_EMAC_RX_DESCRIPTORS" selectedIndex="4"/>
+                <gridItem id="ETHER_CFG_EMAC_TX_DESCRIPTORS" selectedIndex="4"/>
                 <gridItem id="ETHER_CFG_BUFSIZE" selectedIndex="1536"/>
                 <gridItem id="ETHER_CFG_AL1_INT_PRIORTY" selectedIndex="1"/>
-                <gridItem id="ETHER_CFG_CH0_PHY_ACCESS" selectedIndex="1"/>
+                <gridItem id="ETHER_CFG_CH0_PHY_ACCESS" selectedIndex="0"/>
                 <gridItem id="ETHER_CFG_CH1_PHY_ACCESS" selectedIndex="1"/>
                 <gridItem id="ETHER_CFG_PHY_MII_WAIT" selectedIndex="8"/>
                 <gridItem id="ETHER_CFG_PHY_DELAY_RESET" selectedIndex="0x00020000L"/>
                 <gridItem id="ETHER_CFG_LINK_PRESENT" selectedIndex="0"/>
-                <gridItem id="ETHER_CFG_USE_LINKSTA" selectedIndex="1"/>
+                <gridItem id="ETHER_CFG_USE_LINKSTA" selectedIndex="0"/>
                 <gridItem id="ETHER_CFG_USE_PHY_KSZ8041NL" selectedIndex="0"/>
                 <gridItem id="ETHER_CFG_NON_BLOCKING" selectedIndex="0"/>
                 <gridItem id="ETHER_CFG_PMGI_CLOCK" selectedIndex="2500000"/>
