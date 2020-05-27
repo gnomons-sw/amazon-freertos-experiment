@@ -27,7 +27,7 @@
 
 #include "FreeRTOS.h"
 #include "iot_system_init.h"
-//#include "iot_secure_sockets.h"		//TODO: remove comment after porting SecureSocket
+#include "iot_secure_sockets.h"		//TODO: remove comment after porting SecureSocket
 //#include "iot_crypto.h"	//TODO: remove comment after porting Crypto
 
 
@@ -44,7 +44,7 @@ BaseType_t SYSTEM_Init( void )
 
     if( xResult == pdPASS )
     {
-        //xResult = SOCKETS_Init();	//TODO: un-comment when the lib is included
+        xResult = SOCKETS_Init();	//TODO: un-comment when the lib is included
     }
 
     return xResult;

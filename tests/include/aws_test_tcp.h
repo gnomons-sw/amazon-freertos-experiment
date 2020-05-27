@@ -30,10 +30,10 @@
  * Update tcptestECHO_SERVER_ADDR# and
  * tcptestECHO_PORT with IP address
  * and port of unencrypted TCP echo server. */
-#define tcptestECHO_SERVER_ADDR0         34
-#define tcptestECHO_SERVER_ADDR1         218
-#define tcptestECHO_SERVER_ADDR2         25
-#define tcptestECHO_SERVER_ADDR3         197
+#define tcptestECHO_SERVER_ADDR0         192
+#define tcptestECHO_SERVER_ADDR1         168
+#define tcptestECHO_SERVER_ADDR2         5
+#define tcptestECHO_SERVER_ADDR3         48
 #define tcptestECHO_PORT                 ( 8883 )
 
 /* Encrypted Echo Server.
@@ -46,7 +46,7 @@
  * using TLS.
  * 5. tcptestECHO_HOST_ROOT_CA with the trusted root certificate of the
  * echo server using TLS. */
-#define tcptestSECURE_SERVER             1
+#define tcptestSECURE_SERVER             0
 
 #define tcptestECHO_SERVER_TLS_ADDR0     34
 #define tcptestECHO_SERVER_TLS_ADDR1     218

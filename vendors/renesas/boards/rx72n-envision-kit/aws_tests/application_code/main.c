@@ -35,7 +35,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include "serial_term_uart.h"
 
 /* Test application include. */
-//#include "aws_test_runner.h"
+#include "aws_test_runner.h"
 
 /* Aws Library Includes includes. */
 #include "iot_system_init.h"
@@ -159,19 +159,18 @@ void vApplicationDaemonTaskStartupHook( void )
             vTaskDelay(300);
         }
         FreeRTOS_printf( ( "The network is up and running\n" ) );
-        configPRINT_STRING("\nNetwork connection is successful!\n");
 
 //        /* Provision the device with AWS certificate and private key. */
 //        vDevModeKeyProvisioning();
 //
 //        vTaskDelay(10000);	// todo: this is renesas issue.
 //        /* Create the task to run tests. */
-//        xTaskCreate( TEST_RUNNER_RunTests_task,
-//                     "RunTests_task",
-//                     mainTEST_RUNNER_TASK_STACK_SIZE,
-//                     NULL,
-//                     tskIDLE_PRIORITY,
-//                     NULL );
+        xTaskCreate( TEST_RUNNER_RunTests_task,
+                     "RunTests_task",
+                     mainTEST_RUNNER_TASK_STACK_SIZE,
+                     NULL,
+                     tskIDLE_PRIORITY,
+                     NULL );
     }
 }
 /*-----------------------------------------------------------*/
