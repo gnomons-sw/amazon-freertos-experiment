@@ -48,7 +48,7 @@ void get_random_number(uint8_t *data, uint32_t len)
     uint32_t res;
     uint32_t lp;
     uint8_t *bPtr;
-#if defined (BSP_MCU_RX65N) || (BSP_MCU_RX651) || (BSP_MCU_RX64M)
+#if defined (BSP_MCU_RX65N) || (BSP_MCU_RX651) || (BSP_MCU_RX64M) || (BSP_MCU_RX72N)
     adc_cfg_t ad_cfg;
     adc_ch_cfg_t ch_cfg;
     adc_sst_t sst;

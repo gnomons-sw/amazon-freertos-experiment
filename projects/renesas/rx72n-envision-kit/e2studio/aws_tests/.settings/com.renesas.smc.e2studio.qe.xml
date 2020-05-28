@@ -7,19 +7,21 @@
         <Setting id="67" value="ET0_TX_ER"/>
         <Setting id="45" value="RXD2"/>
         <Setting id="68" value="ET0_RX_ER"/>
-        <Setting id="58" value="ET0_CRS"/>
         <Setting id="69" value="ET0_RX_CLK"/>
         <Setting id="70" value="ET0_RX_DV"/>
-        <Setting id="60" value="ET0_COL"/>
         <Setting id="71" value="ET0_ERXD0"/>
         <Setting id="50" value="CLKOUT25M"/>
         <Setting id="72" value="ET0_ERXD1"/>
-        <Setting id="61" value="ET0_ETXD3"/>
         <Setting id="73" value="ET0_ERXD2"/>
+        <Setting id="75" value="ET0_ERXD3"/>
+        <Setting id="32" value="ADTRG0#"/>
+        <Setting id="58" value="ET0_CRS"/>
+        <Setting id="141" value="AN000"/>
+        <Setting id="60" value="ET0_COL"/>
+        <Setting id="61" value="ET0_ETXD3"/>
         <Setting id="62" value="ET0_ETXD2"/>
         <Setting id="63" value="ET0_ETXD1"/>
         <Setting id="85" value="ET0_MDC"/>
-        <Setting id="75" value="ET0_ERXD3"/>
         <Setting id="64" value="ET0_ETXD0"/>
         <Setting id="86" value="ET0_MDIO"/>
         <Setting id="20" value="XTAL"/>
