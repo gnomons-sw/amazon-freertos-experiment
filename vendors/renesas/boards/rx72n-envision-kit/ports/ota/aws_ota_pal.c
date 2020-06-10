@@ -89,12 +89,12 @@ static uint8_t * prvPAL_ReadAndAssumeCertificate( const uint8_t * const pucCertN
 
 /*------------------------------------------ firmware update configuration (start) --------------------------------------------*/
 /* R_FLASH_Write() arguments: specify "low address" and process to "high address" */
-#define BOOT_LOADER_LOW_ADDRESS FLASH_CF_BLOCK_13
-#define BOOT_LOADER_MIRROR_LOW_ADDRESS FLASH_CF_BLOCK_51
+#define BOOT_LOADER_LOW_ADDRESS FLASH_CF_BLOCK_45
+#define BOOT_LOADER_MIRROR_LOW_ADDRESS FLASH_CF_BLOCK_83
 
 /* R_FLASH_Erase() arguments: specify "high address (low block number)" and process to "low address (high block number)" */
-#define BOOT_LOADER_MIRROR_HIGH_ADDRESS FLASH_CF_BLOCK_38
-#define BOOT_LOADER_UPDATE_TEMPORARY_AREA_HIGH_ADDRESS FLASH_CF_BLOCK_52
+#define BOOT_LOADER_MIRROR_HIGH_ADDRESS FLASH_CF_BLOCK_70
+#define BOOT_LOADER_UPDATE_TEMPORARY_AREA_HIGH_ADDRESS FLASH_CF_BLOCK_84
 
 #define BOOT_LOADER_MIRROR_BLOCK_NUM_FOR_SMALL 8
 #define BOOT_LOADER_MIRROR_BLOCK_NUM_FOR_MEDIUM 6
@@ -102,7 +102,7 @@ static uint8_t * prvPAL_ReadAndAssumeCertificate( const uint8_t * const pucCertN
 #define FLASH_INTERRUPT_PRIORITY configMAX_SYSCALL_INTERRUPT_PRIORITY	/* 0(low) - 15(high) */
 /*------------------------------------------ firmware update configuration (end) --------------------------------------------*/
 
-#define BOOT_LOADER_UPDATE_TEMPORARY_AREA_LOW_ADDRESS (uint32_t)FLASH_CF_LO_BANK_LO_ADDR
+#define BOOT_LOADER_UPDATE_TEMPORARY_AREA_LOW_ADDRESS (uint32_t)FLASH_CF_BLOCK_107
 #define BOOT_LOADER_UPDATE_EXECUTE_AREA_LOW_ADDRESS (uint32_t)FLASH_CF_HI_BANK_LO_ADDR
 #define BOOT_LOADER_UPDATE_TARGET_BLOCK_NUMBER (uint32_t)(FLASH_NUM_BLOCKS_CF - BOOT_LOADER_MIRROR_BLOCK_NUM_FOR_SMALL - BOOT_LOADER_MIRROR_BLOCK_NUM_FOR_MEDIUM)
 

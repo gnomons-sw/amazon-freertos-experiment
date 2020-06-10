@@ -91,79 +91,99 @@
                                     									
                                     <listOptionValue builtIn="false" value="${TCINSTALL}/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/config_files}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../freertos_kernel/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos_kernel/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../freertos_kernel/portable/Renesas/RX600v2"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/freertos_kernel/portable/Renesas/RX600v2}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../vendors/renesas/boards/rx72n-envision-kit/aws_tests/config_files"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/vendors/renesas/amazon_freertos_common/compiler_support/ccrx}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../vendors/renesas/amazon_freertos_common"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/vendors/renesas/amazon_freertos_common/network_support}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../vendors/renesas/amazon_freertos_common/compiler_support"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/vendors/renesas/amazon_freertos_common/network_support/onchip_rx_ether}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../vendors/renesas/amazon_freertos_common/compiler_support/ccrx"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/vendors/renesas/amazon_freertos_common}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../vendors/renesas/amazon_freertos_common/network_support"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/vendors/renesas/amazon_freertos_common/compiler_support}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../vendors/renesas/amazon_freertos_common/network_support/onchip_rx_ether"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/freertos_plus/standard/utils/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/freertos_plus/standard/utils/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/freertos_plus/standard/freertos_plus_tcp/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/freertos_plus/standard/freertos_plus_tcp/test}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/test"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/Renesas}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/Renesas"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/abstractions/secure_sockets/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/abstractions/secure_sockets/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/abstractions/pkcs11/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/abstractions/pkcs11/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/abstractions/pkcs11/mbedtls}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/abstractions/pkcs11/mbedtls"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/abstractions/pkcs11/test}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/abstractions/pkcs11/test"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/abstractions/platform/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/abstractions/platform/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/abstractions/platform/freertos/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/abstractions/platform/freertos/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/c_sdk/standard/common/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/c_sdk/standard/common/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/c_sdk/standard/common/include/private}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/c_sdk/standard/common/include/private"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/c_sdk/standard/common/include/types}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/c_sdk/standard/common/include/types"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/c_sdk/standard/mqtt/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/c_sdk/standard/mqtt/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/c_sdk/standard/mqtt/src}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/c_sdk/standard/mqtt/src"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/c_sdk/standard/mqtt/test/mock}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/c_sdk/standard/mqtt/test/mock"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/c_sdk/standard/mqtt/test/access}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/c_sdk/standard/mqtt/test/access"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/freertos_plus/standard/tls/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/c_sdk/standard/https/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/freertos_plus/standard/tls/test}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/c_sdk/standard/https/src"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/freertos_plus/standard/pkcs11/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/c_sdk/standard/https/test/unit"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/freertos_plus/standard/crypto/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/c_sdk/standard/https/test/access"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/3rdparty/pkcs11}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/freertos_plus/standard/tls/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/3rdparty/mbedtls/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/freertos_plus/standard/tls/test"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/3rdparty/mbedtls_config}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/freertos_plus/standard/pkcs11/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/3rdparty/mbedtls/library}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/freertos_plus/standard/crypto/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/3rdparty/unity/src}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/freertos_plus/aws/ota/src"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/3rdparty/unity/extras/fixture/src}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/freertos_plus/aws/ota/test"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/tests/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/3rdparty/pkcs11"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/demos/dev_mode_key_provisioning/include}&quot;"/>
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/3rdparty/jsmn"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/3rdparty/mbedtls/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/3rdparty/mbedtls_config"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/3rdparty/mbedtls/library"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/3rdparty/unity/src"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/freertos_plus/aws/ota/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/3rdparty/unity/extras/fixture/src"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/3rdparty/http_parser"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../libraries/3rdparty/tinycbor"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../tests/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="${ProjDirPath}/../../../../../demos/dev_mode_key_provisioning/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src/smc_gen/r_config}&quot;"/>
                                     									
@@ -761,190 +781,6 @@
                         					
                     </folderInfo>
                     					
-                    <folderInfo id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.configuration.701232697.1754072840" name="/" resourcePath="libraries/freertos_plus/aws/ota/test">
-                        						
-                        <toolChain id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.toolChain.182717185" name="Renesas CCRX Toolchain" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.toolChain" unusedChildren="">
-                            							
-                            <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.PE" id="com.renesas.cdt.managedbuild.renesas.ccrx.base.targetPlatform" osList="win32" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.targetPlatform"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.dsp.681757101" name="DSP Assembler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.dsp.782991328"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.common.1670156597" name="Common" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.common.1914278208"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.compiler.694379634" name="Compiler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.compiler.247561422">
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType.1775677425" name="Compiler Input C" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType"/>
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType.988792481" name="Compiler Input CPP" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.assembler.997157096" name="Assembler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.assembler.1992996895">
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.inputType.1134204724" name="Assembler InputType" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.inputType"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.linker.393454119" name="Linker" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.linker.1695766000"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.librarian.1768532674" name="Library Generator" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.librarian.1758268654"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.converter.17504946" name="Converter" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.converter.566531352"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.rtosConfig.769168520" name="RTOS Configurator" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.rtosConfig.2099334606"/>
-                            						
-                        </toolChain>
-                        					
-                    </folderInfo>
-                    					
-                    <folderInfo id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.configuration.701232697.776581015" name="/" resourcePath="libraries/3rdparty/unity">
-                        						
-                        <toolChain id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.toolChain.208902609" name="Renesas CCRX Toolchain" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.toolChain" unusedChildren="">
-                            							
-                            <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.PE" id="com.renesas.cdt.managedbuild.renesas.ccrx.base.targetPlatform" osList="win32" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.targetPlatform"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.dsp.1911511564" name="DSP Assembler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.dsp.782991328"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.common.1137429632" name="Common" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.common.1914278208"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.compiler.652753060" name="Compiler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.compiler.247561422">
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType.1085865670" name="Compiler Input C" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType"/>
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType.1905082699" name="Compiler Input CPP" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.assembler.1279527994" name="Assembler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.assembler.1992996895">
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.inputType.100584615" name="Assembler InputType" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.inputType"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.linker.752920153" name="Linker" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.linker.1695766000"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.librarian.138906954" name="Library Generator" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.librarian.1758268654"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.converter.125322462" name="Converter" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.converter.566531352"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.rtosConfig.203758103" name="RTOS Configurator" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.rtosConfig.2099334606"/>
-                            						
-                        </toolChain>
-                        					
-                    </folderInfo>
-                    					
-                    <folderInfo id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.configuration.701232697.610751800" name="/" resourcePath="config_files">
-                        						
-                        <toolChain id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.toolChain.1643436305" name="Renesas CCRX Toolchain" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.toolChain" unusedChildren="">
-                            							
-                            <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.PE" id="com.renesas.cdt.managedbuild.renesas.ccrx.base.targetPlatform" osList="win32" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.targetPlatform"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.dsp.141210381" name="DSP Assembler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.dsp.782991328"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.common.1000141691" name="Common" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.common.1914278208"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.compiler.1406476573" name="Compiler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.compiler.247561422">
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType.480194419" name="Compiler Input C" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType"/>
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType.801580928" name="Compiler Input CPP" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.assembler.583686127" name="Assembler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.assembler.1992996895">
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.inputType.1494129160" name="Assembler InputType" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.inputType"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.linker.323097718" name="Linker" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.linker.1695766000"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.librarian.1209450229" name="Library Generator" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.librarian.1758268654"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.converter.33079738" name="Converter" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.converter.566531352"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.rtosConfig.485492974" name="RTOS Configurator" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.rtosConfig.2099334606"/>
-                            						
-                        </toolChain>
-                        					
-                    </folderInfo>
-                    					
-                    <folderInfo id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.configuration.701232697.1886916461" name="/" resourcePath="vendors">
-                        						
-                        <toolChain id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.toolChain.1378147975" name="Renesas CCRX Toolchain" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.toolChain" unusedChildren="">
-                            							
-                            <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.PE" id="com.renesas.cdt.managedbuild.renesas.ccrx.base.targetPlatform" osList="win32" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.targetPlatform"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.dsp.26571563" name="DSP Assembler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.dsp.782991328"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.common.1852141449" name="Common" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.common.1914278208"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.compiler.413029211" name="Compiler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.compiler.247561422">
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType.1965497331" name="Compiler Input C" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType"/>
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType.1700780214" name="Compiler Input CPP" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.assembler.866641596" name="Assembler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.assembler.1992996895">
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.inputType.2119477579" name="Assembler InputType" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.inputType"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.linker.2029816709" name="Linker" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.linker.1695766000"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.librarian.1249940221" name="Library Generator" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.librarian.1758268654"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.converter.1282119412" name="Converter" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.converter.566531352"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.rtosConfig.1070274504" name="RTOS Configurator" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.rtosConfig.2099334606"/>
-                            						
-                        </toolChain>
-                        					
-                    </folderInfo>
-                    					
-                    <fileInfo id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.configuration.701232697.1876005511" name="croutine.h" rcbsApplicability="disable" resourcePath="vendors/renesas/amazon_freertos_common/croutine.h" toolsToInvoke=""/>
-                    					
-                    <fileInfo id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.configuration.701232697.712607933" name="freertos_start.h" rcbsApplicability="disable" resourcePath="vendors/renesas/amazon_freertos_common/freertos_start.h" toolsToInvoke=""/>
-                    					
-                    <folderInfo id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.configuration.701232697.262609901" name="/" resourcePath="freertos_kernel/portable">
-                        						
-                        <toolChain id="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.toolChain.1390856956" name="Renesas CCRX Toolchain" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.hardwaredebug.toolChain" unusedChildren="">
-                            							
-                            <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF;org.eclipse.cdt.core.PE" id="com.renesas.cdt.managedbuild.renesas.ccrx.base.targetPlatform" osList="win32" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.targetPlatform"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.dsp.59067383" name="DSP Assembler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.dsp.782991328"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.common.1034094736" name="Common" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.common.1914278208"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.compiler.1221029312" name="Compiler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.compiler.247561422">
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType.612269637" name="Compiler Input C" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gcc.inputType"/>
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType.181438665" name="Compiler Input CPP" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.compiler.gpp.inputType"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.assembler.349400806" name="Assembler" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.assembler.1992996895">
-                                								
-                                <inputType id="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.inputType.1827833326" name="Assembler InputType" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.assembler.inputType"/>
-                                							
-                            </tool>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.linker.181794555" name="Linker" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.linker.1695766000"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.librarian.481450796" name="Library Generator" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.librarian.1758268654"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.converter.767931373" name="Converter" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.converter.566531352"/>
-                            							
-                            <tool id="com.renesas.cdt.managedbuild.renesas.ccrx.base.rtosConfig.128212031" name="RTOS Configurator" superClass="com.renesas.cdt.managedbuild.renesas.ccrx.base.rtosConfig.2099334606"/>
-                            						
-                        </toolChain>
-                        					
-                    </folderInfo>
-                    					
                     <sourceEntries>
                         						
                         <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="application_code"/>
@@ -955,13 +791,13 @@
                         						
                         <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="freertos_kernel"/>
                         						
-                        <entry excluding="freertos_plus/aws|freertos_plus/aws/ota/test/aws_test_ota_cbor.c|freertos_plus/aws/ota/src/http|freertos_plus/aws/greengrass|c_sdk/standard/mqtt/test/unit/iot_tests_mqtt_serialize_ble.c|c_sdk/standard/mqtt/src/iot_ble_mqtt_serialize.c|c_sdk/standard/mqtt/test/access|c_sdk/standard/serializer|c_sdk/standard/https|3rdparty/win_pcap|3rdparty/tracealyzer_recorder|3rdparty/tinycrypt|3rdparty/tinycbor|3rdparty/lwip_osal|3rdparty/lwip|3rdparty/jsmn|3rdparty/http_parser|3rdparty/CMock|c_sdk/standard/ble|c_sdk/aws|pkcs11|abstractions/secure_sockets/utest|abstractions/secure_sockets/lwip|abstractions/wifi|abstractions/posix|abstractions/common_io|abstractions/ble_hal|freertos_plus/standard/freertos_plus_posix" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="libraries"/>
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="libraries"/>
                         						
                         <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
                         						
-                        <entry excluding="unit_test" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="tests"/>
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="tests"/>
                         						
-                        <entry excluding="renesas/boards/rx72n-envision-kit/ports/ota" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="vendors"/>
+                        <entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="vendors"/>
                         					
                     </sourceEntries>
                     				
