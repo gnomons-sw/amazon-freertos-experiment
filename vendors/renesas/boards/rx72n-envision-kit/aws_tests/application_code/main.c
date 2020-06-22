@@ -28,6 +28,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include "task.h"
 #include "FreeRTOS_IP.h"
 #include <stdio.h>
+#include <stdint.h>
 #include <string.h>
 #include <machine.h>
 
@@ -129,7 +130,7 @@ static void prvMiscInitialization( void )
 	uart_config();
 
 	/* Test serial output */
-	configPRINT_STRING("Test Message\n");
+	configPRINT_STRING("Test SCI\n");
 
     /* Start logging task. */
     xLoggingTaskInitialize( mainLOGGING_TASK_STACK_SIZE,
