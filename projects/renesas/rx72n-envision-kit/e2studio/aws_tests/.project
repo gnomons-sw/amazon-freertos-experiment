@@ -40,6 +40,16 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>freertos_kernel</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>tests</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>vendors</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -50,9 +60,74 @@
 			<locationURI>AFR_HOME/vendors/renesas/boards/rx72n-envision-kit/aws_tests/application_code/main.c</locationURI>
 		</link>
 		<link>
+			<name>application_code/renesas_code</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>config_files/FreeRTOSConfig.h</name>
 			<type>1</type>
 			<locationURI>AFR_HOME/vendors/renesas/boards/rx72n-envision-kit/aws_tests/config_files/FreeRTOSConfig.h</locationURI>
+		</link>
+		<link>
+			<name>config_files/iot_config.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/vendors/renesas/boards/rx72n-envision-kit/aws_tests/config_files/iot_config.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/croutine.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/croutine.c</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/event_groups.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/event_groups.c</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/list.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/list.c</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/portable</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/queue.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/queue.c</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/stream_buffer.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/stream_buffer.c</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/tasks.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/tasks.c</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/timers.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/timers.c</locationURI>
+		</link>
+		<link>
+			<name>tests/common</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>tests/include</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
 			<name>vendors/renesas</name>
@@ -60,9 +135,159 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>application_code/renesas_code/frtos_skeleton</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>application_code/renesas_code/frtos_startup</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/FreeRTOS.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/FreeRTOS.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/StackMacros.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/StackMacros.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/atomic.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/atomic.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/croutine.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/croutine.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/event_groups.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/event_groups.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/list.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/list.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/message_buffer.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/message_buffer.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/mpu_prototypes.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/mpu_prototypes.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/mpu_wrappers.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/mpu_wrappers.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/portable.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/portable.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/projdefs.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/projdefs.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/queue.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/queue.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/semphr.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/semphr.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/stack_macros.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/stack_macros.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/stream_buffer.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/stream_buffer.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/task.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/task.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/include/timers.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/include/timers.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/portable/MemMang</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/portable/Renesas</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>tests/common/aws_test.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/tests/common/aws_test.c</locationURI>
+		</link>
+		<link>
+			<name>tests/common/iot_test_freertos.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/tests/common/iot_test_freertos.c</locationURI>
+		</link>
+		<link>
+			<name>tests/include/iot_config_common.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/tests/include/iot_config_common.h</locationURI>
+		</link>
+		<link>
 			<name>vendors/renesas/amazon_freertos_common</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>application_code/renesas_code/frtos_skeleton/task_function.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/vendors/renesas/boards/rx72n-envision-kit/aws_tests/application_code/renesas_code/frtos_skeleton/task_function.h</locationURI>
+		</link>
+		<link>
+			<name>application_code/renesas_code/frtos_startup/freertos_object_init.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/vendors/renesas/boards/rx72n-envision-kit/aws_tests/application_code/renesas_code/frtos_startup/freertos_object_init.c</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/portable/MemMang/heap_4.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/portable/MemMang/heap_4.c</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/portable/Renesas/RX600v2</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>vendors/renesas/amazon_freertos_common/freertos_start.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/vendors/renesas/amazon_freertos_common/freertos_start.c</locationURI>
+		</link>
+		<link>
+			<name>vendors/renesas/amazon_freertos_common/freertos_start.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/vendors/renesas/amazon_freertos_common/freertos_start.h</locationURI>
 		</link>
 		<link>
 			<name>vendors/renesas/amazon_freertos_common/serial_term_uart.c</name>
@@ -73,6 +298,21 @@
 			<name>vendors/renesas/amazon_freertos_common/serial_term_uart.h</name>
 			<type>1</type>
 			<locationURI>AFR_HOME/vendors/renesas/amazon_freertos_common/serial_term_uart.h</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/portable/Renesas/RX600v2/port.c</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/portable/Renesas/RX600v2/port.c</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/portable/Renesas/RX600v2/port_asm.src</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/portable/Renesas/RX600v2/port_asm.src</locationURI>
+		</link>
+		<link>
+			<name>freertos_kernel/portable/Renesas/RX600v2/portmacro.h</name>
+			<type>1</type>
+			<locationURI>AFR_HOME/freertos_kernel/portable/Renesas/RX600v2/portmacro.h</locationURI>
 		</link>
 	</linkedResources>
 	<variableList>

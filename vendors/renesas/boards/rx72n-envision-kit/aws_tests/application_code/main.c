@@ -24,11 +24,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
 /* FreeRTOS includes. */
-//#include "FreeRTOS.h"
-//#include "task.h"
+#include "FreeRTOS.h"
+#include "task.h"
 //#include "FreeRTOS_IP.h"
-#include  <stdint.h>
-#include "FreeRTOSConfig.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -113,17 +111,14 @@ static void prvMiscInitialization( void );
  */
 void main( void )
 {
-//	nop();
+	nop();
     /* Perform any hardware initialization that does not require the RTOS to be
      * running.  */
 
-	uart_config();
-	configPRINT_STRING("Test Message!");
-
-//    while(1)
-//    {
-//    	vTaskDelay(10000);
-//    }
+    while(1)
+    {
+    	vTaskDelay(10000);
+    }
 }
 /*-----------------------------------------------------------*/
 
@@ -163,7 +158,7 @@ void vApplicationDaemonTaskStartupHook( void )
 //
 //        /* Provision the device with AWS certificate and private key. */
 //        vDevModeKeyProvisioning();
-//
+
 //        vTaskDelay(10000);	// todo: this is renesas issue.
 //        /* Create the task to run tests. */
 //        xTaskCreate( TEST_RUNNER_RunTests_task,
