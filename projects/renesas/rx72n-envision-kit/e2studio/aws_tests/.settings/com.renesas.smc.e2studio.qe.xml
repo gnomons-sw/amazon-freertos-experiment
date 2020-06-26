@@ -9,11 +9,9 @@
         <Setting id="68" value="ET0_RX_ER"/>
         <Setting id="69" value="ET0_RX_CLK"/>
         <Setting id="70" value="ET0_RX_DV"/>
-        <Setting id="92" value="PMGI0_MDC"/>
         <Setting id="71" value="ET0_ERXD0"/>
         <Setting id="50" value="CLKOUT25M"/>
         <Setting id="72" value="ET0_ERXD1"/>
-        <Setting id="94" value="PMGI0_MDIO"/>
         <Setting id="73" value="ET0_ERXD2"/>
         <Setting id="75" value="ET0_ERXD3"/>
         <Setting id="32" value="ADTRG0#"/>
@@ -50,7 +48,7 @@
         <Setting id="PCLKB" value="60000.0"/>
         <Setting id="VCC" value="3.3"/>
         <Setting id="PCLKC" value="60000.0"/>
-        <Setting id="BusCLK" value="80000.0"/>
+        <Setting id="BusCLK" value="120000.0"/>
         <Setting id="PCLKA" value="120000.0"/>
         <Setting id="ICLK" value="240000.0"/>
         <Setting id="FCLK" value="60000.0"/>

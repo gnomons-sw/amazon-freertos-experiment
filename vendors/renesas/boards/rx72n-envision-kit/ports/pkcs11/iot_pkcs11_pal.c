@@ -80,7 +80,7 @@ typedef struct _pkcs_data
 
 #define MAX_CHECK_DATAFLASH_AREA_RETRY_COUNT 3
 
-#if defined (BSP_MCU_RX65N) || (BSP_MCU_RX651)
+#if defined (BSP_MCU_RX65N) || (BSP_MCU_RX651) || (BSP_MCU_RX72N)
 #define PKCS_CONTROL_BLOCK_INITIAL_DATA \
     {\
         /* uint8_t local_storage[((FLASH_DF_BLOCK_SIZE * FLASH_NUM_BLOCKS_DF) / 4) - (sizeof(PKCS_DATA) * PKCS_OBJECT_HANDLES_NUM) - PKCS_SHA256_LENGTH]; */\

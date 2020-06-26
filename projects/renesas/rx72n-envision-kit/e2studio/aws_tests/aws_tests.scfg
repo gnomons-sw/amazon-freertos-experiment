@@ -84,13 +84,13 @@
         <Item current="true" id="ckoselector.buttonDisable.5"/>
         <Item current="true" id="bckdivider.isSelected"/>
         <Item current="240.0 MHz" id="bckdivider.InputValue"/>
-        <Item current="80.0 MHz" id="bckdivider.OutputValue"/>
+        <Item current="120.0 MHz" id="bckdivider.OutputValue"/>
         <Item current="sckselector.radiobutton.swtpll" id="bckdivider.Condition"/>
-        <Item current="comboBox1-3" error="false" id="bckdivider.comboBox"/>
+        <Item current="comboBox1-2" error="false" id="bckdivider.comboBox"/>
         <Item current="240.0 MHz" error="false" id="bckdivider.PreOutput"/>
         <Item current="iclkdivider" error="false" id="bckdivider.PreOutputController"/>
         <Item current="false" id="bckselector.selectBox"/>
-        <Item current="80.0 MHz" id="bckselector.InputValue"/>
+        <Item current="120.0 MHz" id="bckselector.InputValue"/>
         <Item current="" id="bckselector.OutputValue"/>
         <Item current="comboBox1-2" error="false" id="bckselector.comboBox"/>
         <Item current="true" id="fclkdivider.isSelected"/>
@@ -208,20 +208,20 @@
         <Item current="MHz" id="bckpin.unitTxt"/>
         <Item current="true" id="bckpin.Disabled"/>
         <Item current="true" id="bck.isSelected"/>
-        <Item current="80.0 MHz" id="bck.InputValue"/>
-        <Item current="80.0 MHz" id="bck.OutputValue"/>
-        <Item current="80.0" id="bck.frequencyTxt"/>
+        <Item current="120.0 MHz" id="bck.InputValue"/>
+        <Item current="120.0 MHz" id="bck.OutputValue"/>
+        <Item current="120.0" id="bck.frequencyTxt"/>
         <Item current="MHz" id="bck.unitTxt"/>
-        <Item current="80.0" id="bck.CurrentValue"/>
+        <Item current="120.0" id="bck.CurrentValue"/>
         <Item current="false" id="bck.Disabled"/>
         <Item current="false" id="sdclk.selectBox"/>
-        <Item current="80.0 MHz" id="sdclk.InputValue"/>
+        <Item current="120.0 MHz" id="sdclk.InputValue"/>
         <Item current="0" id="sdclk.OutputValue"/>
         <Item current="-" id="sdclk.frequencyTxt"/>
         <Item current="MHz" id="sdclk.unitTxt"/>
         <Item current="80.0" id="sdclk.CurrentValue"/>
         <Item current="true" id="sdclk.Disabled"/>
-        <Item current="false" id="sdclk.SelectBoxDisabled"/>
+        <Item current="true" id="sdclk.SelectBoxDisabled"/>
         <Item current="true" id="uclk.isSelected"/>
         <Item current="48.0 MHz" id="uclk.InputValue"/>
         <Item current="48.0 MHz" id="uclk.OutputValue"/>
@@ -313,8 +313,8 @@
         <pinItem allocation="71" comments="" direction="None" id="ET0_ERXD0" isUsedBySoftware="true" locked="false" status="0"/>
         <pinItem allocation="66" comments="" direction="None" id="ET0_TX_CLK" isUsedBySoftware="true" locked="false" status="0"/>
         <pinItem allocation="86" comments="" direction="None" id="ET0_MDIO" isUsedBySoftware="true" locked="false" status="0"/>
-        <pinItem allocation="94" comments="" direction="None" id="PMGI0_MDIO" isUsedBySoftware="true" locked="false" status="0"/>
-        <pinItem allocation="92" comments="" direction="None" id="PMGI0_MDC" isUsedBySoftware="true" locked="false" status="0"/>
+        <pinItem allocation="" comments="" direction="None" id="PMGI0_MDIO" isUsedBySoftware="false" locked="false" status="0"/>
+        <pinItem allocation="" comments="" direction="None" id="PMGI0_MDC" isUsedBySoftware="false" locked="false" status="0"/>
     </tool>
     <tool id="Interrupt">
         <Item id="BSC_BUSERR" priority="15"/>
@@ -787,8 +787,8 @@
                 <gridItem id="ET0_COL" selectedIndex="1"/>
                 <gridItem id="ET0_MDC" selectedIndex="1"/>
                 <gridItem id="ET0_MDIO" selectedIndex="1"/>
-                <gridItem id="PMGI0_MDC" selectedIndex="1"/>
-                <gridItem id="PMGI0_MDIO" selectedIndex="1"/>
+                <gridItem id="PMGI0_MDC" selectedIndex="0"/>
+                <gridItem id="PMGI0_MDIO" selectedIndex="0"/>
                 <gridItem id="ET0_LINKSTA" selectedIndex="0"/>
                 <gridItem id="ET0_EXOUT" selectedIndex="0"/>
                 <gridItem id="ET0_WOL" selectedIndex="0"/>
@@ -803,8 +803,8 @@
                 <gridItem id="RMII0_CRS_DV" selectedIndex="0"/>
                 <gridItem id="ET0_MDC" selectedIndex="1"/>
                 <gridItem id="ET0_MDIO" selectedIndex="1"/>
-                <gridItem id="PMGI0_MDC" selectedIndex="1"/>
-                <gridItem id="PMGI0_MDIO" selectedIndex="1"/>
+                <gridItem id="PMGI0_MDC" selectedIndex="0"/>
+                <gridItem id="PMGI0_MDIO" selectedIndex="0"/>
                 <gridItem id="ET0_LINKSTA" selectedIndex="0"/>
                 <gridItem id="ET0_EXOUT" selectedIndex="0"/>
                 <gridItem id="ET0_WOL" selectedIndex="0"/>

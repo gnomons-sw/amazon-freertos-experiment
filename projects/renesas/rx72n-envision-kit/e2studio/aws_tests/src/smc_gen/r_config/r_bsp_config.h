@@ -321,7 +321,7 @@ NOTE: The RAM areas are not contiguous.It is separated by 512 KB each.
 /* External Bus Clock Divider (BCLK).
    Available divisors = /1 (no division), /2, /3, /4, /8, /16, /32, /64
 */
-#define BSP_CFG_BCK_DIV                 (3) /* Generated value. Do not edit this manually */
+#define BSP_CFG_BCK_DIV                 (2) /* Generated value. Do not edit this manually */
 
 /* Flash IF Clock Divider (FCK).
    Available divisors = /1 (no division), /2, /4, /8, /16, /32, /64

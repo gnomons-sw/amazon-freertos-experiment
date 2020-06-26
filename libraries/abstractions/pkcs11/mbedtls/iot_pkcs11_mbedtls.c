@@ -1298,6 +1298,7 @@ static CK_RV prvSaveDerKeyToPal( mbedtls_pk_context * pxMbedContext,
 
 /*-------------------------------------------------------------*/
 
+#if !defined( pkcs11configC_INITIALIZE_ALT )
 /**
  * @brief Initializes Cryptoki.
  *
@@ -1344,6 +1345,7 @@ CK_DECLARE_FUNCTION( CK_RV, C_Initialize )( CK_VOID_PTR pInitArgs )
     return xResult;
 }
 /* @[declare_pkcs11_mbedtls_c_initialize] */
+#endif /* if !defined( pkcs11configC_INITIALIZE_ALT ) */
 
 /**
  * @brief Clean up miscellaneous Cryptoki-associated resources.
