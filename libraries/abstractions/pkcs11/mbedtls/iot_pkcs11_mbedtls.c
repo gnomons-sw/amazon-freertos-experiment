@@ -461,7 +461,7 @@ static CK_BBOOL prvOperationActive( const P11Session_t * pxSession )
  * @note: Before prvMbedTLS_Initialize can be called, CRYPTO_Init()
  * must be called to initialize the mbedTLS mutex functions.
  */
-static CK_RV prvMbedTLS_Initialize( void )
+CK_RV prvMbedTLS_Initialize( void )
 {
     CK_RV xResult = CKR_OK;
 

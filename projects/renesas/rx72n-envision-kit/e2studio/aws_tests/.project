@@ -770,16 +770,6 @@
 			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/.gitignore</locationURI>
 		</link>
 		<link>
-			<name>libraries/3rdparty/mbedtls/library/CMakeLists.txt</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/CMakeLists.txt</locationURI>
-		</link>
-		<link>
-			<name>libraries/3rdparty/mbedtls/library/Makefile</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/Makefile</locationURI>
-		</link>
-		<link>
 			<name>libraries/3rdparty/mbedtls/library/aes.c</name>
 			<type>1</type>
 			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/aes.c</locationURI>
@@ -793,11 +783,6 @@
 			<name>libraries/3rdparty/mbedtls/library/arc4.c</name>
 			<type>1</type>
 			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/arc4.c</locationURI>
-		</link>
-		<link>
-			<name>libraries/3rdparty/mbedtls/library/aria.c</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/aria.c</locationURI>
 		</link>
 		<link>
 			<name>libraries/3rdparty/mbedtls/library/asn1parse.c</name>
@@ -838,16 +823,6 @@
 			<name>libraries/3rdparty/mbedtls/library/certs.c</name>
 			<type>1</type>
 			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/certs.c</locationURI>
-		</link>
-		<link>
-			<name>libraries/3rdparty/mbedtls/library/chacha20.c</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/chacha20.c</locationURI>
-		</link>
-		<link>
-			<name>libraries/3rdparty/mbedtls/library/chachapoly.c</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/chachapoly.c</locationURI>
 		</link>
 		<link>
 			<name>libraries/3rdparty/mbedtls/library/cipher.c</name>
@@ -935,11 +910,6 @@
 			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/havege.c</locationURI>
 		</link>
 		<link>
-			<name>libraries/3rdparty/mbedtls/library/hkdf.c</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/hkdf.c</locationURI>
-		</link>
-		<link>
 			<name>libraries/3rdparty/mbedtls/library/hmac_drbg.c</name>
 			<type>1</type>
 			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/hmac_drbg.c</locationURI>
@@ -980,11 +950,6 @@
 			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/net_sockets.c</locationURI>
 		</link>
 		<link>
-			<name>libraries/3rdparty/mbedtls/library/nist_kw.c</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/nist_kw.c</locationURI>
-		</link>
-		<link>
 			<name>libraries/3rdparty/mbedtls/library/oid.c</name>
 			<type>1</type>
 			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/oid.c</locationURI>
@@ -1008,11 +973,6 @@
 			<name>libraries/3rdparty/mbedtls/library/pk_wrap.c</name>
 			<type>1</type>
 			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/pk_wrap.c</locationURI>
-		</link>
-		<link>
-			<name>libraries/3rdparty/mbedtls/library/pkcs11.c</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/pkcs11.c</locationURI>
 		</link>
 		<link>
 			<name>libraries/3rdparty/mbedtls/library/pkcs12.c</name>
@@ -1043,11 +1003,6 @@
 			<name>libraries/3rdparty/mbedtls/library/platform_util.c</name>
 			<type>1</type>
 			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/platform_util.c</locationURI>
-		</link>
-		<link>
-			<name>libraries/3rdparty/mbedtls/library/poly1305.c</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/3rdparty/mbedtls/library/poly1305.c</locationURI>
 		</link>
 		<link>
 			<name>libraries/3rdparty/mbedtls/library/ripemd160.c</name>
@@ -2560,31 +2515,6 @@
 			<locationURI>AFR_HOME/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/BufferManagement/BufferAllocation_2.c</locationURI>
 		</link>
 		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/CompilerName</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/GCC</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/IAR</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/Keil</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/MSVC</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
 			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/Renesas</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -2593,61 +2523,6 @@
 			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/NetworkInterface/RX</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/CompilerName/ReadMe.txt</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/CompilerName/ReadMe.txt</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/CompilerName/pack_struct_end.h</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/CompilerName/pack_struct_end.h</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/CompilerName/pack_struct_start.h</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/CompilerName/pack_struct_start.h</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/GCC/pack_struct_end.h</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/GCC/pack_struct_end.h</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/GCC/pack_struct_start.h</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/GCC/pack_struct_start.h</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/IAR/pack_struct_end.h</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/IAR/pack_struct_end.h</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/IAR/pack_struct_start.h</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/IAR/pack_struct_start.h</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/Keil/pack_struct_end.h</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/Keil/pack_struct_end.h</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/Keil/pack_struct_start.h</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/Keil/pack_struct_start.h</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/MSVC/pack_struct_end.h</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/MSVC/pack_struct_end.h</locationURI>
-		</link>
-		<link>
-			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/MSVC/pack_struct_start.h</name>
-			<type>1</type>
-			<locationURI>AFR_HOME/libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/MSVC/pack_struct_start.h</locationURI>
 		</link>
 		<link>
 			<name>libraries/freertos_plus/standard/freertos_plus_tcp/source/portable/Compiler/Renesas/pack_struct_end.h</name>

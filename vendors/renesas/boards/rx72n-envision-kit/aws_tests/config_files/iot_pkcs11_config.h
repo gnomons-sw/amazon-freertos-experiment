@@ -81,7 +81,7 @@
  * If set to 0, OTA code signing certificate is built in via
  * aws_ota_codesigner_certificate.h.
  */
-#define pkcs11configOTA_SUPPORTED                          1
+#define pkcs11configOTA_SUPPORTED                          0
 
 /**
  * @brief Set to 1 if PAL supports storage for JITP certificate,
